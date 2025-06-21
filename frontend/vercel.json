@@ -1,15 +1,5 @@
 {
-  "env": {
-    "VITE_API_URL": "@VITE_API_URL"
-  },
   "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "${import.meta.env.VITE_API_URL}/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
